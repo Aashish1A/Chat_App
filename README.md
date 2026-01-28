@@ -19,26 +19,6 @@ Built with MERN Stack | Socket.io | JWT Authentication | Cloudinary Integration
 
 ---
 
-## 📋 Table of Contents
-
-- [About The Project](#about-the-project)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [System Architecture](#system-architecture)
-- [Getting Started](#getting-started)
-- [Installation](#installation)
-- [Environment Variables](#environment-variables)
-- [API Documentation](#api-documentation)
-- [Project Structure](#project-structure)
-- [Screenshots](#screenshots)
-- [Performance & Optimization](#performance--optimization)
-- [Deployment](#deployment)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [Contact](#contact)
-
----
-
 ## 🎯 About The Project
 
 **ChatWave** is a production-ready, real-time messaging application that demonstrates modern full-stack development practices. Built with scalability and user experience in mind, it features instant messaging, online presence detection, media sharing, and a beautiful, responsive interface.
