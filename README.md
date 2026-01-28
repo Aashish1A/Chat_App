@@ -440,12 +440,10 @@ VITE_BACKEND_URL=https://your-backend-url.vercel.app
 - [ ] **Video Calling**: 1-on-1 video calls integration
 - [ ] **Message Reactions**: Emoji reactions to messages
 - [ ] **File Sharing**: Support for documents, PDFs, videos
-- [ ] **Message Search**: Search through chat history
 - [ ] **Typing Indicators**: See when someone is typing
 - [ ] **Message Status**: Sent, delivered, read receipts
 - [ ] **Delete Messages**: Delete for me/everyone
 - [ ] **Edit Messages**: Edit sent messages
-- [ ] **Dark Mode**: Theme toggle option
 - [ ] **Push Notifications**: Desktop and mobile notifications
 - [ ] **Email Verification**: Verify user emails
 - [ ] **Password Reset**: Forgot password functionality
@@ -453,7 +451,6 @@ VITE_BACKEND_URL=https://your-backend-url.vercel.app
 - [ ] **Message Forwarding**: Forward messages to other chats
 - [ ] **Voice/Video Calls**: WebRTC integration
 - [ ] **Stories**: Status/story feature
-- [ ] **End-to-End Encryption**: Enhanced security
 
 ---
 
@@ -507,28 +504,6 @@ Contributions make the open-source community amazing! Any contributions you make
 - 🚀 Live Demo: [https://chat-wave-one.vercel.app/](https://chat-wave-one.vercel.app/)
 - 📦 Repository: [https://github.com/Aashish1A/Chat_App](https://github.com/Aashish1A/Chat_App)
 - 🐛 Issues: [https://github.com/Aashish1A/Chat_App/issues](https://github.com/Aashish1A/Chat_App/issues)
-
----
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` file for more information.
-
-```
-MIT License
-
-Copyright (c) 2026 Aashish Kumar
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
 
 ---
 
