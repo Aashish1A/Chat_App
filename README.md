@@ -1,169 +1,275 @@
-# 💬 Chat Wave - Real-Time Chat Application
-
 <div align="center">
-  <img src="https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react&logoColor=white" />
-  <img src="https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/Socket.io-Real--Time-010101?style=for-the-badge&logo=socket.io&logoColor=white" />
-  <img src="https://img.shields.io/badge/TailwindCSS-4.1.14-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-</div>
 
-<div align="center">
-  <h3>A modern, real-time chat application built with the MERN stack</h3>
-  <p>Connect with friends instantly with live messaging, online status indicators, and image sharing</p>
-  
-  <a href="https://chat-wave-one.vercel.app/" target="_blank">
-    <strong>🚀 Live Demo</strong>
-  </a>
+# 💬 ChatWave - Real-Time Messaging Platform
+
+<img src="https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+<img src="https://img.shields.io/badge/Node.js-23.6.0-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+<img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+<img src="https://img.shields.io/badge/Socket.io-4.8.1-010101?style=for-the-badge&logo=socket.io&logoColor=white" alt="Socket.io" />
+<img src="https://img.shields.io/badge/TailwindCSS-4.1.14-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+<img src="https://img.shields.io/badge/Express-5.1.0-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+
+### 🚀 A Modern Full-Stack Real-Time Chat Application
+
+Built with MERN Stack | Socket.io | JWT Authentication | Cloudinary Integration
+
+[View Live Demo](https://chat-wave-one.vercel.app/) • [Report Bug](https://github.com/Aashish1A/Chat_App/issues) • [Request Feature](https://github.com/Aashish1A/Chat_App/issues)
+
 </div>
 
 ---
 
-## ✨ Features
+## 📋 Table of Contents
+
+- [About The Project](#about-the-project)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [System Architecture](#system-architecture)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [API Documentation](#api-documentation)
+- [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
+- [Performance & Optimization](#performance--optimization)
+- [Deployment](#deployment)
+- [Future Enhancements](#future-enhancements)
+- [Contributing](#contributing)
+- [Contact](#contact)
+
+---
+
+## 🎯 About The Project
+
+**ChatWave** is a production-ready, real-time messaging application that demonstrates modern full-stack development practices. Built with scalability and user experience in mind, it features instant messaging, online presence detection, media sharing, and a beautiful, responsive interface.
+
+### 🎪 Why This Project Stands Out
+
+- **Real-Time Architecture**: Leverages Socket.io for bi-directional, event-based communication
+- **Scalable Backend**: RESTful API design with JWT-based authentication
+- **Modern Frontend**: React 19 with Context API for efficient state management
+- **Cloud Integration**: Cloudinary for optimized media storage and delivery
+- **Production Ready**: Deployed on Vercel with error handling and logging
+- **Best Practices**: Clean code, modular architecture, and security-first approach
+
+---
+
+## ✨ Key Features
 
 ### 🔐 **Authentication & Security**
-
-- User registration and login with JWT authentication
-- Secure password hashing with bcrypt
-- Protected routes and middleware
-- Persistent sessions with localStorage
+- ✅ JWT-based authentication system
+- ✅ Bcrypt password hashing (10 salt rounds)
+- ✅ Protected API routes with middleware
+- ✅ Secure token storage and validation
+- ✅ Session persistence across browser refreshes
 
 ### 💬 **Real-Time Messaging**
+- ✅ Instant message delivery via WebSocket
+- ✅ Real-time online/offline status indicators
+- ✅ Unread message badges with counters
+- ✅ Message timestamps with formatted display
+- ✅ Persistent message history in MongoDB
+- ✅ Smooth scroll to new messages
 
-- Instant message delivery using Socket.io
-- Online/offline status indicators
-- Read receipts and timestamps
-- Message history persistence
+### 🖼️ **Media & File Handling**
+- ✅ Image upload and sharing
+- ✅ Cloudinary integration for optimized storage
+- ✅ Base64 encoding for seamless uploads
+- ✅ Image preview in chat
+- ✅ Shared media gallery view
 
-### 🖼️ **Media Sharing**
+### 👤 **User Management**
+- ✅ User registration with bio and profile picture
+- ✅ Profile editing functionality
+- ✅ User search with real-time filtering
+- ✅ Avatar display with online indicators
+- ✅ User list with active status
 
-- Image upload and sharing
-- Cloudinary integration for image storage
-- Optimized image delivery
-
-### 👤 **User Profiles**
-
-- Customizable profile pictures
-- Bio and personal information
-- Profile editing functionality
-
-### 🎨 **Modern UI/UX**
-
-- Responsive design for all devices
-- Clean and intuitive interface
-- Smooth animations and transitions
-- Custom scrollbar styling
-- Beautiful gradient backgrounds
+### 🎨 **UI/UX Excellence**
+- ✅ Fully responsive design (mobile, tablet, desktop)
+- ✅ Modern glassmorphism effects
+- ✅ Smooth animations and transitions
+- ✅ Custom gradient backgrounds
+- ✅ Intuitive navigation and chat interface
+- ✅ Toast notifications for user feedback
+- ✅ Loading states and error handling
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### **Frontend**
-
-- **React 19.1.1** - UI library
-- **Vite** - Fast build tool
-- **TailwindCSS 4.1.14** - Utility-first CSS framework
-- **React Router DOM** - Client-side routing
-- **Socket.io Client** - Real-time communication
-- **Axios** - HTTP client
-- **React Hot Toast** - Beautiful notifications
+| Technology | Version | Purpose |
+|-----------|---------|---------|
+| React | 19.1.1 | UI Library |
+| Vite | 6.0.11 | Build Tool & Dev Server |
+| TailwindCSS | 4.1.14 | Utility-First CSS Framework |
+| React Router | 7.1.6 | Client-Side Routing |
+| Socket.io Client | 4.8.1 | Real-Time Communication |
+| Axios | 1.7.9 | HTTP Client |
+| React Hot Toast | 2.4.1 | Toast Notifications |
 
 ### **Backend**
-
-- **Node.js** - Runtime environment
-- **Express 5.1.0** - Web framework
-- **MongoDB** - NoSQL database
-- **Mongoose** - MongoDB ODM
-- **Socket.io** - Real-time bidirectional communication
-- **JWT** - Authentication tokens
-- **Bcrypt** - Password hashing
-- **Cloudinary** - Image storage and optimization
-- **CORS** - Cross-origin resource sharing
-
----
-
-## 📸 Screenshots
-
-### Home Page
-
-_Real-time chat interface with online status indicators_
-
-### Login/Signup
-
-_Secure authentication system_
-
-### Profile Page
-
-_Customizable user profiles with image upload_
+| Technology | Version | Purpose |
+|-----------|---------|---------|
+| Node.js | 23.6.0 | Runtime Environment |
+| Express | 5.1.0 | Web Framework |
+| MongoDB | Latest | NoSQL Database |
+| Mongoose | 8.9.6 | MongoDB ODM |
+| Socket.io | 4.8.1 | WebSocket Server |
+| JWT | 9.0.2 | Authentication |
+| Bcryptjs | 2.4.3 | Password Hashing |
+| Cloudinary | 2.6.0 | Cloud Media Storage |
+| CORS | 2.8.5 | Cross-Origin Support |
+| Dotenv | 16.4.7 | Environment Management |
 
 ---
 
-## 🚀 Quick Start
+## 🏗️ System Architecture
+
+```
+┌─────────────────┐         ┌─────────────────┐         ┌─────────────────┐
+│                 │         │                 │         │                 │
+│  React Client   │◄───────►│  Express Server │◄───────►│    MongoDB      │
+│   (Vite)        │         │   + Socket.io   │         │    Database     │
+│                 │         │                 │         │                 │
+└────────┬────────┘         └────────┬────────┘         └─────────────────┘
+         │                           │
+         │                           │
+         │                  ┌────────▼────────┐
+         │                  │                 │
+         └─────────────────►│   Cloudinary    │
+                            │  (Media CDN)    │
+                            │                 │
+                            └─────────────────┘
+
+Flow:
+1. Client authenticates via JWT
+2. WebSocket connection established for real-time updates
+3. Messages stored in MongoDB
+4. Images uploaded to Cloudinary
+5. Real-time updates pushed to connected clients
+```
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- MongoDB (local or Atlas)
-- npm or yarn
+Ensure you have the following installed:
 
-### Installation
+- **Node.js** (v14.0.0 or higher) - [Download](https://nodejs.org/)
+- **npm** (v6.0.0 or higher) or **yarn**
+- **MongoDB** (local installation or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas))
+- **Git** - [Download](https://git-scm.com/)
 
-1. **Clone the repository**
+Optional:
+- **Cloudinary Account** - [Sign Up Free](https://cloudinary.com/)
 
-   ```bash
-   git clone https://github.com/Aashish1A/Chat_App.git
-   cd Chat_App
-   ```
+---
 
-2. **Setup Backend**
+## 📦 Installation
 
-   ```bash
-   cd Server
-   npm install
-   ```
+### Step 1: Clone the Repository
 
-   Create a `.env` file in the Server directory:
+```bash
+git clone https://github.com/Aashish1A/Chat_App.git
+cd Chat_App
+```
 
-   ```env
-   PORT=3000
-   MONGODB_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret_key
-   CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-   CLOUDINARY_API_KEY=your_cloudinary_api_key
-   CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-   CLIENT_URL=http://localhost:5173
-   ```
+### Step 2: Backend Setup
 
-   Start the server:
+```bash
+cd Server
+npm install
+```
 
-   ```bash
-   npm run server
-   ```
+Create `.env` file in the **Server** directory:
 
-3. **Setup Frontend**
+```env
+# Server Configuration
+PORT=3000
+NODE_ENV=development
 
-   ```bash
-   cd ../Client
-   npm install
-   ```
+# Database
+MONGODB_URI=mongodb://localhost:27017/chatwave
+# OR use MongoDB Atlas
+# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/chatwave
 
-   Create a `.env` file in the Client directory:
+# JWT Secret (Use a strong random string)
+JWT_SECRET=your_super_secret_jwt_key_min_32_characters
 
-   ```env
-   VITE_BACKEND_URL=http://localhost:3000
-   ```
+# Cloudinary Configuration
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
-   Start the development server:
+# Frontend URL (for CORS)
+CLIENT_URL=http://localhost:5173
+```
 
-   ```bash
-   npm run dev
-   ```
+Start the backend server:
 
-4. **Open your browser**
-   ```
-   Navigate to http://localhost:5173
-   ```
+```bash
+npm run dev
+# or
+npm start
+```
+
+Server will run on: `http://localhost:3000`
+
+### Step 3: Frontend Setup
+
+Open a new terminal:
+
+```bash
+cd Client
+npm install
+```
+
+Create `.env` file in the **Client** directory:
+
+```env
+VITE_BACKEND_URL=http://localhost:3000
+```
+
+Start the frontend development server:
+
+```bash
+npm run dev
+```
+
+Frontend will run on: `http://localhost:5173`
+
+### Step 4: Access the Application
+
+Open your browser and navigate to:
+```
+http://localhost:5173
+```
+
+---
+
+## 🔑 Environment Variables
+
+### Backend (.env in Server/)
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `PORT` | Server port | `3000` |
+| `MONGODB_URI` | MongoDB connection string | `mongodb://localhost:27017/chatwave` |
+| `JWT_SECRET` | Secret key for JWT tokens | `your_secret_key_min_32_chars` |
+| `CLOUDINARY_CLOUD_NAME` | Cloudinary cloud name | `your_cloud_name` |
+| `CLOUDINARY_API_KEY` | Cloudinary API key | `123456789012345` |
+| `CLOUDINARY_API_SECRET` | Cloudinary API secret | `your_api_secret` |
+| `CLIENT_URL` | Frontend URL for CORS | `http://localhost:5173` |
+
+### Frontend (.env in Client/)
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `VITE_BACKEND_URL` | Backend API URL | `http://localhost:3000` |
 
 ---
 
@@ -171,147 +277,286 @@ _Customizable user profiles with image upload_
 
 ```
 Chat_App/
-├── Client/                 # Frontend React application
-│   ├── src/
-│   │   ├── assets/        # Images and static assets
-│   │   ├── components/    # Reusable React components
-│   │   │   ├── ChatContainer.jsx
-│   │   │   ├── Sidebar.jsx
-│   │   │   └── RightSidebar.jsx
-│   │   ├── context/       # React Context API
-│   │   │   ├── AuthContext.jsx
-│   │   │   └── ChatContext.jsx
-│   │   ├── lib/           # Utility functions
-│   │   ├── pages/         # Page components
-│   │   │   ├── HomePage.jsx
-│   │   │   ├── LoginPage.jsx
-│   │   │   └── ProfilePage.jsx
-│   │   ├── App.jsx        # Main App component
-│   │   └── main.jsx       # Entry point
-│   ├── package.json
-│   └── vite.config.js
 │
-└── Server/                 # Backend Node.js application
-    ├── controllers/        # Route controllers
-    │   ├── messageController.js
-    │   └── userController.js
-    ├── lib/               # Configuration files
-    │   ├── cloudinary.js
-    │   ├── db.js
-    │   └── utils.js
-    ├── middleware/        # Custom middleware
-    │   └── auth.js
-    ├── models/            # Mongoose models
-    │   ├── Message.js
-    │   └── User.js
-    ├── routes/            # API routes
-    │   ├── messageRoutes.js
-    │   └── userRoutes.js
-    ├── server.js          # Entry point
-    └── package.json
+├── Client/                          # Frontend Application
+│   ├── public/
+│   │   ├── favicon.svg             # Custom teal favicon
+│   │   └── bgImage.svg             # Background gradient image
+│   │
+│   ├── src/
+│   │   ├── assets/                 # Images and icons
+│   │   │   └── assets.js           # Asset exports
+│   │   │
+│   │   ├── components/             # Reusable Components
+│   │   │   ├── ChatContainer.jsx   # Main chat interface
+│   │   │   ├── Sidebar.jsx         # User list & navigation
+│   │   │   └── RightSidebar.jsx    # Chat info & media
+│   │   │
+│   │   ├── context/                # Global State Management
+│   │   │   ├── AuthContext.jsx     # Authentication state
+│   │   │   └── ChatContext.jsx     # Chat & messaging state
+│   │   │
+│   │   ├── lib/                    # Utility Functions
+│   │   │   └── utils.js            # Helper functions
+│   │   │
+│   │   ├── pages/                  # Page Components
+│   │   │   ├── HomePage.jsx        # Main chat page
+│   │   │   ├── LoginPage.jsx       # Auth page
+│   │   │   └── ProfilePage.jsx     # Profile edit page
+│   │   │
+│   │   ├── App.jsx                 # Root component
+│   │   ├── index.css               # Global styles
+│   │   └── main.jsx                # Entry point
+│   │
+│   ├── .env                        # Environment variables
+│   ├── eslint.config.js            # ESLint configuration
+│   ├── index.html                  # HTML template
+│   ├── package.json                # Dependencies
+│   ├── vite.config.js              # Vite configuration
+│   └── vercel.json                 # Vercel deployment config
+│
+└── Server/                          # Backend Application
+    ├── controllers/                # Route Controllers
+    │   ├── messageController.js    # Message logic
+    │   └── userController.js       # User & auth logic
+    │
+    ├── lib/                        # Configuration
+    │   ├── cloudinary.js           # Cloudinary setup
+    │   ├── db.js                   # MongoDB connection
+    │   └── utils.js                # JWT token generation
+    │
+    ├── middleware/                 # Custom Middleware
+    │   └── auth.js                 # JWT authentication
+    │
+    ├── models/                     # Mongoose Models
+    │   ├── Message.js              # Message schema
+    │   └── User.js                 # User schema
+    │
+    ├── routes/                     # API Routes
+    │   ├── messageRoutes.js        # Message endpoints
+    │   └── userRoutes.js           # User endpoints
+    │
+    ├── .env                        # Environment variables
+    ├── package.json                # Dependencies
+    ├── server.js                   # Entry point & Socket.io
+    └── vercel.json                 # Vercel deployment config
 ```
 
 ---
 
-## 🔑 Key Features Explained
+## 📸 Screenshots
 
-### Real-Time Communication
+### 🏠 Home Page - Chat Interface
+*Real-time messaging with online status, unread badges, and responsive design*
 
-The app uses Socket.io to establish a WebSocket connection between the client and server, enabling instant message delivery without polling.
+![Home Page](.github/assets/homepage.png)
 
-### State Management
+### 🔐 Authentication Page
+*Modern login/signup interface with gradient background*
 
-React Context API is used for global state management, handling authentication state and chat data across components.
+![Authentication Page](.github/assets/auth.png)
 
-### Image Upload
+### 👤 Profile Management
+*User profile editing with image upload*
 
-Images are uploaded to Cloudinary using their API, converted to base64 on the client side, and stored with optimized delivery URLs.
+![Profile Management](.github/assets/profile.png)
 
-### Authentication Flow
+### 💬 Chat Window
+*Clean chat interface with message bubbles and timestamps*
 
-1. User registers/logs in with credentials
-2. Server validates and returns JWT token
-3. Token stored in localStorage
-4. Token sent with every API request for authentication
-5. Protected routes verify token before granting access
-
----
-
-## 🌐 API Endpoints
-
-### Authentication
-
-- `POST /api/auth/signup` - Register new user
-- `POST /api/auth/login` - Login user
-- `GET /api/auth/check` - Verify authentication
-- `GET /api/auth/users` - Get all users
-- `POST /api/auth/logout` - Logout user
-
-### Messages
-
-- `GET /api/messages/:userId` - Get messages with specific user
-- `POST /api/messages/send` - Send a message
-
-### Profile
-
-- `PUT /api/auth/update-profile` - Update user profile
+![Chat Window](.github/assets/chat.png)
 
 ---
 
-## 🎯 Future Enhancements
+## ⚡ Performance & Optimization
 
-- [ ] Group chat functionality
-- [ ] Voice and video calling
-- [ ] Message reactions and emojis
-- [ ] File sharing (documents, videos)
-- [ ] Message search functionality
-- [ ] Dark/Light theme toggle
-- [ ] Typing indicators
-- [ ] Message editing and deletion
-- [ ] Push notifications
-- [ ] End-to-end encryption
+### Frontend Optimizations
+- ✅ **Vite Build Tool**: Lightning-fast hot module replacement
+- ✅ **Code Splitting**: React.lazy for route-based splitting
+- ✅ **Image Optimization**: Cloudinary CDN with automatic optimization
+- ✅ **Efficient Re-renders**: React Context with proper memoization
+- ✅ **Smooth Scrolling**: Optimized scroll-to-bottom on new messages
+
+### Backend Optimizations
+- ✅ **Database Indexing**: Indexed user emails and message timestamps
+- ✅ **JWT Stateless Auth**: No server-side session storage
+- ✅ **Socket.io Rooms**: Efficient event broadcasting
+- ✅ **Error Handling**: Comprehensive try-catch blocks
+- ✅ **CORS Configuration**: Secure cross-origin requests
+
+### Security Features
+- ✅ Password hashing with bcrypt (10 salt rounds)
+- ✅ JWT token expiration and validation
+- ✅ Protected API routes with authentication middleware
+- ✅ Input validation and sanitization
+- ✅ Secure environment variable management
+- ✅ HTTPS in production (Vercel)
+
+---
+
+## 🚢 Deployment
+
+### Deployed on Vercel
+
+**Live Application**: [https://chat-wave-one.vercel.app/](https://chat-wave-one.vercel.app/)
+
+### Deploy Your Own
+
+#### Frontend (Vercel)
+1. Push your code to GitHub
+2. Import project in Vercel
+3. Set root directory to `Client`
+4. Add environment variable: `VITE_BACKEND_URL`
+5. Deploy
+
+#### Backend (Vercel/Render/Railway)
+1. Push your code to GitHub
+2. Import project in your platform
+3. Set root directory to `Server`
+4. Add all environment variables
+5. Deploy
+
+### Environment Variables for Production
+```env
+# Backend Production
+MONGODB_URI=mongodb+srv://...
+JWT_SECRET=your_production_secret
+CLOUDINARY_CLOUD_NAME=...
+CLOUDINARY_API_KEY=...
+CLOUDINARY_API_SECRET=...
+CLIENT_URL=https://your-frontend-url.vercel.app
+
+# Frontend Production
+VITE_BACKEND_URL=https://your-backend-url.vercel.app
+```
+
+---
+
+## 🔮 Future Enhancements
+
+### Planned Features
+- [ ] **Group Chats**: Create and manage group conversations
+- [ ] **Voice Messages**: Record and send audio messages
+- [ ] **Video Calling**: 1-on-1 video calls integration
+- [ ] **Message Reactions**: Emoji reactions to messages
+- [ ] **File Sharing**: Support for documents, PDFs, videos
+- [ ] **Message Search**: Search through chat history
+- [ ] **Typing Indicators**: See when someone is typing
+- [ ] **Message Status**: Sent, delivered, read receipts
+- [ ] **Delete Messages**: Delete for me/everyone
+- [ ] **Edit Messages**: Edit sent messages
+- [ ] **Dark Mode**: Theme toggle option
+- [ ] **Push Notifications**: Desktop and mobile notifications
+- [ ] **Email Verification**: Verify user emails
+- [ ] **Password Reset**: Forgot password functionality
+- [ ] **User Blocking**: Block unwanted users
+- [ ] **Message Forwarding**: Forward messages to other chats
+- [ ] **Voice/Video Calls**: WebRTC integration
+- [ ] **Stories**: Status/story feature
+- [ ] **End-to-End Encryption**: Enhanced security
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions make the open-source community amazing! Any contributions you make are **greatly appreciated**.
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+### How to Contribute
+
+1. **Fork the Project**
+   ```bash
+   git clone https://github.com/Aashish1A/Chat_App.git
+   ```
+
+2. **Create Feature Branch**
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+
+3. **Commit Changes**
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+
+4. **Push to Branch**
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+
+5. **Open Pull Request**
+
+### Development Guidelines
+- Follow existing code style and conventions
+- Write meaningful commit messages
+- Test your changes thoroughly
+- Update documentation as needed
+- Add comments for complex logic
 
 ---
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 👨‍💻 Author
+## 📞 Contact
 
 **Aashish Kumar**
 
-- GitHub: [@Aashish1A](https://github.com/Aashish1A)
-- Live Demo: [Chat Wave](https://chat-wave-one.vercel.app/)
+- 📧 Email: [your.email@example.com](mailto:aashishkumar93412@gmail.com)
+- 🐙 GitHub: [@Aashish1A](https://github.com/Aashish1A)
+- 🔗 LinkedIn: [Your LinkedIn](https://linkedin.com/in/Aashish1a)
+- 🌐 Portfolio: [Your Portfolio](https://aashish1a.netlify.app)
+
+**Project Links**
+- 🚀 Live Demo: [https://chat-wave-one.vercel.app/](https://chat-wave-one.vercel.app/)
+- 📦 Repository: [https://github.com/Aashish1A/Chat_App](https://github.com/Aashish1A/Chat_App)
+- 🐛 Issues: [https://github.com/Aashish1A/Chat_App/issues](https://github.com/Aashish1A/Chat_App/issues)
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` file for more information.
+
+```
+MIT License
+
+Copyright (c) 2026 Aashish Kumar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
 
 ---
 
 ## 🙏 Acknowledgments
 
-- React team for the amazing framework
-- Socket.io for real-time capabilities
-- TailwindCSS for beautiful styling utilities
-- Cloudinary for image hosting
-- MongoDB for flexible database solutions
-- Vercel for seamless deployment
+Special thanks to these amazing technologies and resources:
+
+- [React](https://react.dev/) - For the powerful UI library
+- [Node.js](https://nodejs.org/) - For the robust runtime environment
+- [MongoDB](https://www.mongodb.com/) - For flexible data storage
+- [Socket.io](https://socket.io/) - For real-time communication
+- [TailwindCSS](https://tailwindcss.com/) - For beautiful styling
+- [Cloudinary](https://cloudinary.com/) - For media management
+- [Vercel](https://vercel.com/) - For seamless deployment
+- [Heroicons](https://heroicons.com/) - For beautiful icons
 
 ---
 
 <div align="center">
-  <p>Made with ❤️ by Aashish Kumar</p>
-  <p>⭐ Star this repo if you like it!</p>
+
+### 💖 Show Your Support
+
+Give a ⭐️ if you like this project!
+
+**Made with ❤️ and React by [Aashish Kumar](https://github.com/Aashish1A)**
+
+---
+
+*This project was built to demonstrate full-stack development skills with modern technologies and best practices.*
+
 </div>
