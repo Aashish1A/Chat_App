@@ -2,11 +2,13 @@ import React, { useContext, useEffect, useState } from 'react'
 import assets from '../assets/assets'
 import { ChatContext } from '../../context/ChatContext'
 import AuthContext from '../../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 const RightSidebar = () => {
 
     const {selectedUser, messages} = useContext(ChatContext);
     const {logout, onlineUsers} = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const [messageImages, setMessagesImages] = useState([]);
 
@@ -21,7 +23,7 @@ const RightSidebar = () => {
     <div className={`bg-[8185B2]/10 text-white w-full relative overflow-y-scroll ${selectedUser ? "max-md:hidden" : ""}`}>
 
         <div className='pt-16 flex flex-col items-center gap-2 text-xs font-light mx-auto'>
-            <img src={selectedUser?.profilePicture || assets.avatar_icon} alt="" className='w-20 aspect-[1/1] rounded-full' />
+            <img onClick={() => navigate('/profile')} src={selectedUser?.profilePicture || assets.avatar_icon} alt="" className='w-20 aspect-[1/1] rounded-full cursor-pointer hover:ring-4 hover:ring-teal-500/50 transition-all' />
             <h1 className='px-10 text-xl font-medium mx-auto flex items-center gap-2'>
                 {onlineUsers.includes(selectedUser._id) && <p className='w-2 h-2 rounded-full bg-green-500'></p>}
                 {selectedUser.fullName}
@@ -40,7 +42,7 @@ const RightSidebar = () => {
             </div>
         </div>
 
-        <button onClick={() => logout()} className='absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-purple-400 to-violet-600 text-white border-none text-sm font-light py-2 px-20 rounded-full cursor-pointer'>Logout</button>
+        <button onClick={() => logout()} className='absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-teal-400 to-cyan-500 hover:from-teal-500 hover:to-cyan-600 text-white border-none text-sm font-light py-2 px-20 rounded-full cursor-pointer transition-all'>Logout</button>
     </div>
   )
 }
