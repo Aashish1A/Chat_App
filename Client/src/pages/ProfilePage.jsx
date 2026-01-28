@@ -46,7 +46,7 @@ const ProfilePage = () => {
             <input onChange={(e) => setName(e.target.value)} value={name} type="text" placeholder='Your name' className='p-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500' required/>
             <textarea onChange={(e) => setBio(e.target.value)} value={bio} placeholder='Your bio' rows={4} className='p-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500' required/>
 
-            <button type='submit' className='bg-gradient-to-r from-purple-400 to-violet-600 text-white border-none text-lg p-2 rounded-full cursor-pointer'>Save Changes</button>
+            <button type='submit' className='bg-gradient-to-r from-teal-400 to-cyan-500 hover:from-teal-500 hover:to-cyan-600 text-white border-none text-lg p-2 rounded-full cursor-pointer transition-all'>Save Changes</button>
         </form>
 
         <img src={authUser?.profilePicture || assets.logo_icon} alt="logo" className={`max-w-44 aspect-square rounded-full mx-10 max-sm:mt-10 ${selectedImg && "rounded-full"}`} />
