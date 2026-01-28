@@ -349,22 +349,22 @@ Chat_App/
 ### 🏠 Home Page - Chat Interface
 *Real-time messaging with online status, unread badges, and responsive design*
 
-![Home Page](.github/assets/homepage.png)
+![Home Page](github/assets/homepage.png)
 
 ### 🔐 Authentication Page
 *Modern login/signup interface with gradient background*
 
-![Authentication Page](.github/assets/auth.png)
+![Authentication Page](github/assets/auth.png)
 
 ### 👤 Profile Management
 *User profile editing with image upload*
 
-![Profile Management](.github/assets/profile.png)
+![Profile Management](github/assets/profile.png)
 
 ### 💬 Chat Window
 *Clean chat interface with message bubbles and timestamps*
 
-![Chat Window](.github/assets/chat.png)
+![Chat Window](github/assets/chat.png)
 
 ---
 
